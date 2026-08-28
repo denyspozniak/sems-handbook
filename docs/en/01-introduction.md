@@ -195,7 +195,7 @@ Parts 2 through 6 are the spine and are meant to be read in order — the runtim
 SIP layer, which explains the session core, which explains the media plane and the B2BUA.
 Parts 7 through 10 are largely independent and can be read as needed. Part 11 is deployment,
 Part 12 covers the other branches of the SEMS family, and Part 13 is reference material —
-including a [Kamailio↔SEMS term map](47-term-map.md) worth skimming early if you are coming
+including a [Kamailio↔SEMS term map](52-term-map.md) worth skimming early if you are coming
 from the proxy side.
 
 > [!NOTE]

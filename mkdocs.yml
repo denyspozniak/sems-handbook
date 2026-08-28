@@ -73,9 +73,15 @@ nav:
       - en/44-fork-sipwise.md
       - en/45-fork-yeti-switch.md
       - en/46-frafos-and-the-sbc.md
-  - 13. Reference:
-      - en/47-term-map.md
-      - en/48-whats-new.md
+  - 13. Where SEMS could go next:
+      - en/47-gaps-overview.md
+      - en/48-hep-and-capture.md
+      - en/49-metrics-and-observability.md
+      - en/50-media-forking-stt-tts.md
+      - en/51-peer-dispatching.md
+  - 14. Reference:
+      - en/52-term-map.md
+      - en/53-whats-new.md
 
 theme:
   name: material
@@ -163,7 +169,8 @@ plugins:
             "10. Security & Hardening": "10. Безпека і hardening"
             "11. SEMS in production": "11. SEMS у продакшені"
             "12. The SEMS family": "12. Родина SEMS"
-            "13. Reference": "13. Довідник"
+            "13. Where SEMS could go next": "13. Куди SEMS може рухатись далі"
+            "14. Reference": "14. Довідник"
 
 exclude_docs: |
   /**/README.md

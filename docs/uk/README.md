@@ -144,7 +144,15 @@ flowchart LR
 - [12.3 yeti-switch/sems](45-fork-yeti-switch.md)
 - [12.4 FRAFOS і SBC](46-frafos-and-the-sbc.md)
 
-### 13. Довідник
+### 13. Куди SEMS може рухатись далі
 
-- [13.1 Мапа термінів](47-term-map.md)
-- [13.2 Що нового у 2.x](48-whats-new.md)
+- [13.1 Прогалини й напрямки](47-gaps-overview.md)
+- [13.2 HEP і захоплення пакетів](48-hep-and-capture.md)
+- [13.3 Метрики і спостережуваність](49-metrics-and-observability.md)
+- [13.4 Форк медіа для STT і TTS](50-media-forking-stt-tts.md)
+- [13.5 Диспатчинг на групу пірів](51-peer-dispatching.md)
+
+### 14. Довідник
+
+- [14.1 Мапа термінів](52-term-map.md)
+- [14.2 Що нового у 2.x](53-whats-new.md)

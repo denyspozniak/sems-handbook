@@ -192,4 +192,4 @@ the story of how it implements them.
 | **Relay** | Forwarding RTP without decoding it. Cheap, and the default in `sbc` ([9.4](34-rtp-mux-and-relay.md)) |
 | **Transcoding** | Decoding and re-encoding audio to bridge two codecs. Expensive ([5.4](19-codecs-and-plugins.md)) |
 
-A fuller list, including the Kamailio↔SEMS translations, is in [13.1](47-term-map.md).
+A fuller list, including the Kamailio↔SEMS translations, is in [14.1](52-term-map.md).

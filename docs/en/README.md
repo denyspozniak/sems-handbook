@@ -144,7 +144,15 @@ signalling as a B2BUA **and** carries the media. That is the split this handbook
 - [12.3 yeti-switch/sems](45-fork-yeti-switch.md)
 - [12.4 FRAFOS and the SBC](46-frafos-and-the-sbc.md)
 
-### 13. Reference
+### 13. Where SEMS could go next
 
-- [13.1 Term map](47-term-map.md)
-- [13.2 What's new in 2.x](48-whats-new.md)
+- [13.1 Gaps and directions](47-gaps-overview.md)
+- [13.2 HEP and packet capture](48-hep-and-capture.md)
+- [13.3 Metrics and observability](49-metrics-and-observability.md)
+- [13.4 Media forking for STT and TTS](50-media-forking-stt-tts.md)
+- [13.5 Dispatching to a peer group](51-peer-dispatching.md)
+
+### 14. Reference
+
+- [14.1 Term map](52-term-map.md)
+- [14.2 What's new in 2.x](53-whats-new.md)

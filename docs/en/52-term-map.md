@@ -1,3 +1,3 @@
-# 13.1 Term map
+# 14.1 Term map
 
 _Chapter pending._
