@@ -1,0 +1,182 @@
+site_name: SEMS Handbook
+site_description: An architecture-focused, bilingual deep-dive into the SIP Express Media Server
+site_url: https://denyspozniak.github.io/sems-handbook/
+site_author: Denys Pozniak
+repo_url: https://github.com/denyspozniak/sems-handbook
+repo_name: denyspozniak/sems-handbook
+edit_uri: edit/main/docs/
+
+# Explicit nav so the sidebar follows the handbook's logical part order
+# (filename order would scatter parts). i18n folder mode: reference the
+# default-locale (en/) paths; the uk build swaps the folder automatically,
+# and section titles are localised via the i18n plugin's nav_translations.
+nav:
+  - en/index.md
+  - 1. Preface:
+      - en/01-introduction.md
+      - en/01b-sip-media-primer.md
+  - 2. The Runtime:
+      - en/02-thread-model.md
+      - en/03-event-system.md
+      - en/04-memory-and-ownership.md
+      - en/05-lifecycle.md
+      - en/06-sizing-and-tuning.md
+  - 3. The SIP Layer:
+      - en/07-sip-stack-overview.md
+      - en/08-transport.md
+      - en/09-parser.md
+      - en/10-transaction-layer.md
+      - en/11-dialog-layer.md
+  - 4. Session Core:
+      - en/12-amsession.md
+      - en/13-session-container-and-factories.md
+      - en/14-offer-answer.md
+      - en/15-session-event-handlers.md
+  - 5. The Media Plane:
+      - en/16-media-processor.md
+      - en/17-rtp-stream.md
+      - en/18-audio-pipeline.md
+      - en/19-codecs-and-plugins.md
+      - en/20-dtmf-and-jitter.md
+  - 6. B2BUA:
+      - en/21-b2b-session.md
+      - en/22-b2b-media.md
+      - en/23-sbc.md
+  - 7. The Application Framework:
+      - en/24-plugin-architecture.md
+      - en/25-dsm.md
+      - en/26-ivr-and-python.md
+      - en/27-app-tradeoffs.md
+  - 8. Control Plane:
+      - en/28-rpc-architecture.md
+      - en/29-monitoring-and-stats.md
+      - en/30-app-timers-and-events.md
+  - 9. Cool architectural tricks:
+      - en/31-registrar-client.md
+      - en/32-conference-and-mixing.md
+      - en/33-msg-storage-and-voicemail.md
+      - en/34-rtp-mux-and-relay.md
+      - en/35-siprec-and-recording.md
+      - en/36-zrtp-and-srtp.md
+  - 10. Security & Hardening:
+      - en/37-security-surface.md
+      - en/38-security-media.md
+      - en/39-security-hardening.md
+  - 11. SEMS in production:
+      - en/40-with-kamailio.md
+      - en/41-topologies-and-ha.md
+      - en/42-lab.md
+  - 12. The SEMS family:
+      - en/43-family-overview.md
+      - en/44-fork-sipwise.md
+      - en/45-fork-yeti-switch.md
+      - en/46-frafos-and-the-sbc.md
+  - 13. Reference:
+      - en/47-term-map.md
+      - en/48-whats-new.md
+
+theme:
+  name: material
+  language: en
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds: {case: lower}
+
+hooks:
+  - hooks/edit_url.py
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: folder
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: uk
+          name: Українська
+          build: true
+          nav_translations:
+            "1. Preface": "1. Передмова"
+            "2. The Runtime": "2. Рантайм"
+            "3. The SIP Layer": "3. SIP-рівень"
+            "4. Session Core": "4. Ядро сесій"
+            "5. The Media Plane": "5. Медіа-площина"
+            "6. B2BUA": "6. B2BUA"
+            "7. The Application Framework": "7. Фреймворк застосунків"
+            "8. Control Plane": "8. Control plane"
+            "9. Cool architectural tricks": "9. Архітектурні фішки"
+            "10. Security & Hardening": "10. Безпека і hardening"
+            "11. SEMS in production": "11. SEMS у продакшені"
+            "12. The SEMS family": "12. Родина SEMS"
+            "13. Reference": "13. Довідник"
+
+exclude_docs: |
+  /**/README.md
+  superpowers/
+
+extra:
+  alternate:
+    - name: English
+      link: /sems-handbook/
+      lang: en
+    - name: Українська
+      link: /sems-handbook/uk/
+      lang: uk
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/denyspozniak
+
+copyright: MIT licensed
