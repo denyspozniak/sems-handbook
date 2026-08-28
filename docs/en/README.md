@@ -99,7 +99,9 @@ signalling as a B2BUA **and** carries the media. That is the split this handbook
 
 - [6.1 AmB2BSession](21-b2b-session.md)
 - [6.2 B2B media](22-b2b-media.md)
-- [6.3 The SBC application](23-sbc.md)
+- [6.3 The SBC application: architecture](23-sbc.md)
+- [6.4 SBC call profiles and rewriting](23b-sbc-profiles.md)
+- [6.5 SBC call control modules](23c-sbc-call-control.md)
 
 ### 7. The Application Framework
 

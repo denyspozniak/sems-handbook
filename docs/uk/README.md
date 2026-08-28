@@ -99,7 +99,9 @@ flowchart LR
 
 - [6.1 AmB2BSession](21-b2b-session.md)
 - [6.2 B2B-медіа](22-b2b-media.md)
-- [6.3 Застосунок SBC](23-sbc.md)
+- [6.3 Застосунок SBC: архітектура](23-sbc.md)
+- [6.4 Профілі дзвінків SBC і переписування](23b-sbc-profiles.md)
+- [6.5 Модулі call control у SBC](23c-sbc-call-control.md)
 
 ### 7. Фреймворк застосунків
 

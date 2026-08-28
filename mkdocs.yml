@@ -42,6 +42,8 @@ nav:
       - en/21-b2b-session.md
       - en/22-b2b-media.md
       - en/23-sbc.md
+      - en/23b-sbc-profiles.md
+      - en/23c-sbc-call-control.md
   - 7. The Application Framework:
       - en/24-plugin-architecture.md
       - en/25-dsm.md
