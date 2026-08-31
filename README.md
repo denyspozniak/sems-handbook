@@ -81,7 +81,8 @@ A proxy routes signalling and then steps out of the media path. SEMS does the op
     <tr><td>10</td><td><b>Security &amp; Hardening</b></td><td>Attack surface · media-plane abuse · blacklists and limits</td></tr>
     <tr><td>11</td><td><b>In Production</b></td><td>SEMS with Kamailio · topologies and HA · a reproducible lab</td></tr>
     <tr><td>12</td><td><b>The SEMS Family</b></td><td>sipwise · yeti-switch · FRAFOS — what differs and why</td></tr>
-    <tr><td>13</td><td><b>Reference</b></td><td>Term map (incl. Kamailio↔SEMS) · what's new in 2.x</td></tr>
+    <tr><td>13</td><td><b>Where It Could Go</b></td><td>HEP · metrics · streaming to STT/TTS · peer dispatching</td></tr>
+    <tr><td>14</td><td><b>Reference</b></td><td>Term map (incl. Kamailio↔SEMS) · what's new in 2.x</td></tr>
   </tbody>
 </table>
 
