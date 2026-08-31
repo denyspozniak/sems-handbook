@@ -24,6 +24,34 @@ It has no registrar, no user location database, no routing logic worth the name.
 call and it will do something interesting with the audio; ask it to decide where a call
 should go and you are using the wrong tool.
 
+## With thanks to the people who built it
+
+Before anything else: this handbook exists because someone else did the hard part.
+
+SEMS' own `README.md` names two people. **Raphael Coeffic** (rco@iptel.org) — *"the father of
+SEMS"* — wrote the thing, including the SIP stack in `core/sip/` that
+[Part 3](07-sip-stack-overview.md) spends five chapters admiring. **Stefan Sayer** — *"the lead
+developer"* — carried it for years and authored the `apps/sbc` framework that
+[Part 6](23-sbc.md) needs three chapters to cover.
+
+The full contributor list lives in the project's
+[README](https://github.com/sems-server/sems#authors), where it belongs — this is a book about
+the code, not a roll of honour, and the two names above are the ones whose decisions you will be
+reading on almost every page.
+
+The README also thanks **FRAFOS GmbH, sipwise GmbH, IPTEGO GmbH, iptelorg GmbH and TelTech
+Systems Inc.** for sponsoring the work. Two of those names come back in
+[Part 12](43-family-overview.md), because sponsoring a project and then taking it in your own
+direction is most of how this family came to have several branches.
+
+> [!NOTE]
+> Where this handbook points at something that looks odd — a `sleep(5)` in the session reaper
+> ([2.3](04-memory-and-ownership.md)), a `cstring` comparison that only checks the shorter
+> length ([3.3](09-parser.md)), a pooled session model compiled out and left in place
+> ([2.1](02-thread-model.md)) — read it as archaeology, not criticism. This is twenty years of a
+> production media server that people have run real traffic through the whole time. The book is
+> written by someone reading the code, not by someone who had to make it work in 2004.
+
 ## The plane split
 
 ```mermaid

@@ -52,7 +52,10 @@ def normalise(target: str, source_dir: Path) -> tuple[Path | None, str | None]:
     """
     parsed = urlparse(target)
     if parsed.scheme in {"http", "https", "mailto", "javascript", "data"}:
-        return None, parsed.fragment or None
+        # External: we never fetch it, so its fragment is not ours to verify.
+        # Returning the fragment here would send it down the same-page anchor
+        # path below and report every "https://host/page#section" as broken.
+        return None, None
     if not parsed.path and parsed.fragment:
         # pure #anchor -> same page
         return None, parsed.fragment or None
